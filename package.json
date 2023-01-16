@@ -1,0 +1,75 @@
+{
+  "name": "dentist",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/dom": "^8.19.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "babel-jest": "^29.3.1",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2",
+    "eslint": "^8.29.0",
+    "esm": "^3.2.25",
+    "fakerator": "^0.3.6",
+    "firebase": "^9.15.0",
+    "firebase-admin": "^11.3.0",
+    "firestore-jest-mock": "^0.19.0",
+    "jasmine": "^4.5.0",
+    "jasmine-parameterized": "^1.0.0",
+    "jest-expect-message": "^1.1.3",
+    "jsdom": "^20.0.3",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.5",
+    "react-scripts": "5.0.1",
+    "sass": "^1.56.2",
+    "testing-library-table-queries": "^0.2.0",
+    "validator": "^13.7.0",
+    "web-vitals": "^3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "loadData": "node -r esm src/loadData.js"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(scss|css)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "setupFilesAfterEnv": [
+      "jest-expect-message"
+    ],
+    "reporters": [
+      "default"
+    ],
+    "testEnvironment": "node",
+    "modulePathIgnorePatterns": [
+      "test-helper.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "postcss-normalize": "^10.0.1"
+  }
+}
